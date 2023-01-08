@@ -276,13 +276,3 @@ resource "aws_cloudwatch_event_target" "target_pipeline" {
   arn       = aws_codepipeline.codepipeline.arn
   role_arn  = aws_iam_role.CloudWatch_role.arn
 }
-
-#setup dynamo DB as our locking mechanism with s3 remote backend
-terraform {
-  backend "s3" {
-    bucket         = "tcf-tf-statefiles"
-    key            = "dev/pipelines/terraform.tfstate"
-    region         = "us-east-1"
-    dynamodb_table = "tcf-tf-statefiles-lock"
-  }
-}
