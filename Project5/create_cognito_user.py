@@ -35,6 +35,6 @@ def create_user(username: str, password: str, user_pool_id: str, app_client_id: 
 #Call the function
 # username: str, password: str, user_pool_id: str, app_client_id: str, email: str, name: str
 create_user(
-    "aaliya", "Aaliya426!",
+    "aaliya11", "Aaliya0583",
     "{pool_id}", 
     "{client_id}", "{email_id}", "Aaliya")
