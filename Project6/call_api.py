@@ -5,10 +5,10 @@ import requests
 region = 'us-east-1'
 cognito = boto3.client('cognito-idp', region)
 
-clientId = '2fplc8ig732737r1l5u0buo4cl'
-username = "hsingh"
-password = "Hsingh123!"
-HOST = "https://j21bwyfuc7.execute-api.us-east-1.amazonaws.com"
+clientId = 'XXXXXXXXXXXXXXXXXXXXX'
+username = "aaliya"
+password = "Aaliya123!"
+HOST = "https://{api_id}.execute-api.us-east-1.amazonaws.com"
 STAGE = "DEV/{proxy+}"
 BASE_URL = f"{HOST}/{STAGE}"
 
