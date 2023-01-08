@@ -4,7 +4,7 @@ phases:
   pre_build:
     commands:
       - echo adding authentication
-      - aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin 089999148961.dkr.ecr.us-east-1.amazonaws.com
+      - aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin XXXXXXXXXXXX.dkr.ecr.us-east-1.amazonaws.com
   build:
     commands:
       - echo Hello World!
@@ -12,8 +12,8 @@ phases:
       - echo Building the Docker image...  
       - docker build -t alpine/vim .
       - docker images
-      - docker tag alpine/vim 089999148961.dkr.ecr.us-east-1.amazonaws.com/tcf-repo
-      - docker push 089999148961.dkr.ecr.us-east-1.amazonaws.com/tcf-repo
+      - docker tag alpine/vim XXXXXXXXXXXX.dkr.ecr.us-east-1.amazonaws.com/tcf-repo
+      - docker push XXXXXXXXXXXX.dkr.ecr.us-east-1.amazonaws.com/tcf-repo
 
 
   post_build:
