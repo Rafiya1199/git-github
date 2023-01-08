@@ -28,8 +28,8 @@ Use call_api.py
 
 Update the following values call_api.py file:
 clientId = 'XXXXXXXXXXXXXXXXXXXX'
-username = "rafiya11"
-password = "Rafiya0453!"
+username = "aaliya11"
+password = "Aaliya0453!"
 HOST = "https://{api_id}.execute-api.us-east-1.amazonaws.com"
 
 ## (Optional) How to test the setup?
