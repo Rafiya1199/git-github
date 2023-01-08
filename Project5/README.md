@@ -24,7 +24,7 @@ Run the file: create_cognito_user.py to create a user in the user pool.
 
 curl -H "Authorization: $ID_TOKEN" https://{rest-api-id}-{vpce-id}.execute-api.{region}.amazonaws.com/{stage}
 
-Example: curl -H "Authorization: $ID_TOKEN" https://y4w0yvw0rg-vpce-02d0f1c8911ee44c1.execute-api.us-east-1.amazonaws.com/DEV/{proxy+}
+Example: curl -H "Authorization: $ID_TOKEN" https://{api_id}-vpce-02d0f1c8911ee44c1.execute-api.us-east-1.amazonaws.com/DEV/{proxy+}
  
 
 ### Part 2: Private API setup with NAT gateway, Internet gateway and EC2 in private subnet (main.tf config)
@@ -35,10 +35,10 @@ Example: curl -H "Authorization: $ID_TOKEN" https://y4w0yvw0rg-vpce-02d0f1c8911e
 3. Save and run the python script: call_api.py after updating following params appropriately in the script. (or use curl command)
 
 ```python
-clientId = '21sn0ldh6a1le4ko8lh16e4k4e'
+clientId = 'XXXXXXXXXXXXXXXXXXXXX'
 username = "rafiya11"
 password = "Rafiya0453!"
-HOST = "https://0rxyy2znzb.execute-api.us-east-1.amazonaws.com"
+HOST = "https://{api_id}.execute-api.us-east-1.amazonaws.com"
 ```
 
 3. You will receive the api response and api content as output.
