@@ -1,3 +1,5 @@
+Create a code deploy application using Terraform to deploy a lambda function using Blue/Green strategy.
+
 # How to deploy and test tf code
 
 - When lambda is deployed for the first time, the variables lambda_version & lambda_alias_version is equal to 1.
