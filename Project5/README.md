@@ -36,8 +36,8 @@ Example: curl -H "Authorization: $ID_TOKEN" https://{api_id}-vpce-02d0f1c8911ee4
 
 ```python
 clientId = 'XXXXXXXXXXXXXXXXXXXXX'
-username = "rafiya11"
-password = "Rafiya0453!"
+username = "aaliya11"
+password = "Aaliya0583!"
 HOST = "https://{api_id}.execute-api.us-east-1.amazonaws.com"
 ```
 
