@@ -12,8 +12,8 @@ phases:
       - echo Building the Docker image...  
       - docker build -t alpine/vim .
       - docker images
-      - docker tag alpine/vim XXXXXXXXXXXX.dkr.ecr.us-east-1.amazonaws.com/repo
-      - docker push XXXXXXXXXXXX.dkr.ecr.us-east-1.amazonaws.com/repo
+      - docker tag alpine/vim XXXXXXXXXXXX.dkr.ecr.us-east-1.amazonaws.com/tcf-repo
+      - docker push XXXXXXXXXXXX.dkr.ecr.us-east-1.amazonaws.com/tcf-repo
 
 
   post_build:
