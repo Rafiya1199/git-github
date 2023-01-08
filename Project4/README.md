@@ -1,1 +1,1 @@
-Create a sample ECS Fargate service using Terraform. 
+Create a ECS Fargate service using Terraform. 
