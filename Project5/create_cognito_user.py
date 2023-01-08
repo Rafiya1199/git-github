@@ -35,6 +35,6 @@ def create_user(username: str, password: str, user_pool_id: str, app_client_id: 
 #Call the function
 # username: str, password: str, user_pool_id: str, app_client_id: str, email: str, name: str
 create_user(
-    "hsingh", "Hsingh123!",
-    "us-east-1_EoBemJwlB", 
-    "2fplc8ig732737r1l5u0buo4cl", "hsingh@thecloudforce.com", "Harry")
+    "rafiya", "Rafiya123!",
+    "{pool_id}", 
+    "{client_id}", "{email_id}", "Rafiya")
