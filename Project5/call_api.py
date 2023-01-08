@@ -5,10 +5,10 @@ import requests
 region = 'us-east-1'
 cognito = boto3.client('cognito-idp', region)
 
-clientId = '2fplc8ig732737r1l5u0buo4cl'
-username = "hsingh"
-password = "Hsingh123!"
-HOST = "https://j21bwyfuc7.execute-api.us-east-1.amazonaws.com"
+clientId = 'XXXXXXXXXXXXXXXXXXX'
+username = "Rafiya"
+password = "Rafiya123!"
+HOST = "https://XXXXXXXXX.execute-api.us-east-1.amazonaws.com"
 STAGE = "DEV/{proxy+}"
 BASE_URL = f"{HOST}/{STAGE}"
 
@@ -19,9 +19,6 @@ response = cognito.initiate_auth(AuthFlow='USER_PASSWORD_AUTH', AuthParameters={
 accessToken = response['AuthenticationResult']['AccessToken']
 idToken = response['AuthenticationResult']['IdToken']
 print("ID token: ", idToken)
-
-
-
 
 print("----------------------------------------------------------------------------")
 
