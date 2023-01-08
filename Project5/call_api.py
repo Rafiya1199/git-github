@@ -6,7 +6,7 @@ region = 'us-east-1'
 cognito = boto3.client('cognito-idp', region)
 
 clientId = 'XXXXXXXXXXXXXXXXXXX'
-username = "Aaliya"
+username = "aaliya"
 password = "Aaliya426!"
 HOST = "https://XXXXXXXXX.execute-api.us-east-1.amazonaws.com"
 STAGE = "DEV/{proxy+}"
