@@ -24,4 +24,5 @@ AWS Projects using Terraform
 - Project 22 - EC2 instance with Cloudwatch alarm that terminates it if the CPU utilization reaches 100%.
 - Project 23 - S3 with SQS queue config which sends a notification to the queue when an object is uploaded to the bucket.
 - Project 24 - Create and deploy lambda function with python container image/alternative image
+- Project 25 - ECS with Fargate service and exec configuration
 
