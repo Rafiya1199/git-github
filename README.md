@@ -19,5 +19,6 @@ AWS Projects using Terraform
 - Project 17 - Cognito authentication using Google as a federated identity provider
 - Project 18 - ECS with Fargate service and autoscaling config
 - Project 19 - EC2 instances with ALB configuration
-
+- Project 20 - EC2 instance with EFS volume
+- Project 21 - S3 static website with Cloudfront distribution
 
