@@ -30,7 +30,7 @@ variable "domain_name2" {
  
 variable "certificate_arn" {
    description = "ACM certificate arn"
-   default     = "arn:aws:acm:us-east-1:089999148961:certificate/8559a4da-44e9-493e-81c5-73167374b587"
+   default     = "arn:aws:acm:us-east-1:XXXXXXXXXXX:certificate/8559a4da-44e9-493e-81c5-73167374b587"
  }
  
 variable "zone_id" {
@@ -41,7 +41,7 @@ variable "zone_id" {
 variable "account_ID" {
   description = "AWS Account ID"
   type        = string
-  default     = "089999148961"
+  default     = "XXXXXXXXXXX"
 }
 
 #Cognito User pool name
