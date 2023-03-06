@@ -18,5 +18,6 @@ AWS Projects using Terraform
 - Project 16 - Public API with access control based on custom scopes
 - Project 17 - Cognito authentication using Google as a federated identity provider
 - Project 18 - ECS with Fargate service and autoscaling config
+- Project 19 - EC2 instances with ALB configuration
 
 
