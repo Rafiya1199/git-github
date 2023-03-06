@@ -11,4 +11,5 @@ AWS Projects using Terraform
 - Project 9 - Build Contact Us Form Functionality using terraform and OpenAPI 3.0
 - Project 10 - EC2 with Auto Scaling Group
 - Project 11 - EKS Sample Deployment
+- Project 12 - Access S3 bucket with temporary AWS credentials using cognito user pools and federated identities.
 
