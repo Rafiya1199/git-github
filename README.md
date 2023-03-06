@@ -9,4 +9,5 @@ AWS Projects using Terraform
 - Project 7 - Lambda function triggered on a EC2 tag update event
 - Project 8 - Receive Emails from a Website's "Contact Us" form Using AWS SES, Lambda, & API Gateway
 - Project 9 - Build Contact Us Form Functionality using terraform and OpenAPI 3.0
+- Project 10 - EC2 with Auto Scaling Group
 

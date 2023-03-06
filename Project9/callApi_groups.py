@@ -65,9 +65,9 @@ auth = AWSRequestsAuth(aws_access_key=access_key,
 ## Call the API with temporary aws credentials
 
 mymsg = {
-    "senderEmail" : "rafiyafathima.11@gmail.com",
+    "senderEmail" : "rafiya.11@gmail.com",
     "senderName": "rafiya",
-    "senderPhoneNumber": "9566631068",
+    "senderPhoneNumber": "9345091321",
     "message": "Hello Good morning"
 }
 
