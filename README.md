@@ -21,4 +21,5 @@ AWS Projects using Terraform
 - Project 19 - EC2 instances with ALB configuration
 - Project 20 - EC2 instance with EFS volume
 - Project 21 - S3 static website with Cloudfront distribution
+- Project 22 - EC2 instance with Cloudwatch alarm that terminates it if the CPU utilization reaches 100%.
 
