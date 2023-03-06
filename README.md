@@ -16,4 +16,6 @@ AWS Projects using Terraform
 - Project 14 - S3 static website with user authentication and authorization with AWS Cognito
 - Project 15 - Cognito authentication using python scripts
 - Project 16 - Public API with access control based on custom scopes
+- Project 17 - Cognito authentication using Google as a federated identity provider
+
 
