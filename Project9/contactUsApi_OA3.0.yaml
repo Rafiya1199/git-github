@@ -1,0 +1,94 @@
+openapi: "3.0.1"
+info:
+  title: "contactUs-API"
+  description: "API for Contact Us Form Functionality"
+  version: "1.0.0"
+servers:
+- url: "https://contactusrestapi.dev.thecloudforce.net"
+paths:
+  /sendContactEmail:
+    post:
+      parameters:
+      - name: "Content-Type"
+        in: "header"
+        schema:
+          type: "string"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/bodyValidation"
+        required: true
+      x-amazon-apigateway-request-validator: "Validate body, query string parameters,\
+        \ and headers"
+      x-amazon-apigateway-integration:
+        type: "aws_proxy"
+        httpMethod: "POST"
+        uri: "arn:aws:apigateway:${aws_region}:lambda:path/2015-03-31/functions/${get_lambda_arn}/invocations"
+        passthroughBehavior: "when_no_match"
+  /movies:
+    post:
+      security:
+      - sigv4: []
+      responses:
+        "200":
+          description: "200 response"
+          content: {}
+      x-amazon-apigateway-integration:
+        type: "aws_proxy"
+        httpMethod: "POST"
+        uri: "arn:aws:apigateway:${aws_region}:lambda:path/2015-03-31/functions/${get_lambda_arn}/invocations"
+        responses:
+          default:
+            statusCode: "200"
+        passthroughBehavior: "when_no_match"
+        contentHandling: "CONVERT_TO_TEXT"
+  /shows:
+    post:
+      security:
+      - sigv4: []
+      responses:
+        "200":
+          description: "200 response"
+          content: {}
+      x-amazon-apigateway-integration:
+        type: "aws_proxy"
+        httpMethod: "POST"
+        uri: "arn:aws:apigateway:${aws_region}:lambda:path/2015-03-31/functions/${get_lambda_arn}/invocations"
+        responses:
+          default:
+            statusCode: "200"
+        passthroughBehavior: "when_no_match"
+        contentHandling: "CONVERT_TO_TEXT"
+components:
+  securitySchemes:
+    sigv4:
+      type: "apiKey"
+      name: "Authorization"
+      in: "header"
+      x-amazon-apigateway-authtype: "awsSigv4"
+  schemas:
+    bodyValidation:
+      title: "ContactUs Form details"
+      required:
+      - "message"
+      - "senderEmail"
+      - "senderName"
+      - "senderPhoneNumber"
+      type: "object"
+      properties:
+        senderEmail:
+          type: "string"
+          format: "email"
+        senderName:
+          type: "string"
+        senderPhoneNumber:
+          maxLength: 10
+          pattern: "[0-9]{10}"
+          type: "string"
+        message:
+          type: "string"
+x-amazon-apigateway-request-validators:
+  Validate body, query string parameters, and headers:
+    validateRequestParameters: true
+    validateRequestBody: true
