@@ -13,4 +13,5 @@ AWS Projects using Terraform
 - Project 11 - EKS Sample Deployment
 - Project 12 - Access S3 bucket with temporary AWS credentials using cognito user pools and federated identities.
 - Project 13 - Cognito groups to control access to API endpoints
+- Project 14 - S3 static website with user authentication and authorization with AWS Cognito
 
